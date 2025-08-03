@@ -1,0 +1,10 @@
+artifact_location: file:///D:/%23MTech%20-%20AI%20and%20ML/Second%20Year%20-%20Third%20Semester/Sub%204%20-%20MLOPS/Assignment%201/mlops-housing-pipeline/mlruns/413654916336497065/models/m-fcc8e6bd399d44c2b05a9f82d38df21b/artifacts
+creation_timestamp: 1754233243593
+experiment_id: '413654916336497065'
+last_updated_timestamp: 1754233278650
+model_id: m-fcc8e6bd399d44c2b05a9f82d38df21b
+model_type: null
+name: LinearRegression
+source_run_id: 4401e0d02054479eac4b2673552b24e3
+status: 2
+status_message: null
