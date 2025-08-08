@@ -3,8 +3,6 @@ name: CI/CD for Housing API
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   lint-and-test:
@@ -41,8 +39,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.sagarpawar123 }}
-          password: ${{ secrets.dckr_pat_kOgt5AYiPOqvXJdxlBBlAo8bEoQ }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push (latest & sha tags)
         uses: docker/build-push-action@v6
@@ -50,5 +48,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.sagarpawar123 }}/housing-api:latest
-            ${{ secrets.dckr_pat_kOgt5AYiPOqvXJdxlBBlAo8bEoQ }}/housing-api:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/housing-api:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/housing-api:${{ github.sha }}
