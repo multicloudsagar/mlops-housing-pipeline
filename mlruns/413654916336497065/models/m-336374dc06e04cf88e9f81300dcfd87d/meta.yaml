@@ -1,0 +1,10 @@
+artifact_location: file:///D:/%23MTech%20-%20AI%20and%20ML/Second%20Year%20-%20Third%20Semester/Sub%204%20-%20MLOPS/Assignment%201/mlops-housing-pipeline/mlruns/413654916336497065/models/m-336374dc06e04cf88e9f81300dcfd87d/artifacts
+creation_timestamp: 1754379175021
+experiment_id: '413654916336497065'
+last_updated_timestamp: 1754379179497
+model_id: m-336374dc06e04cf88e9f81300dcfd87d
+model_type: null
+name: DecisionTree
+source_run_id: 9a1fc69254a34540a35c075f11c446dd
+status: 2
+status_message: null
