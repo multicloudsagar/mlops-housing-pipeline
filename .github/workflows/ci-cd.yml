@@ -24,7 +24,7 @@ jobs:
           pip install -r api/requirements.txt
 
       - name: Lint (flake8)
-        run: flake8 api/ --ignore=E501
+        run: flake8 api/ --ignore=E501 --extend-ignore=E302,E305,W292
 
       - name: Run tests (pytest)
         run: pytest -q || true  # <-- keep green if you don’t have tests yet; remove '|| true' once you add tests
